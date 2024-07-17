@@ -249,7 +249,7 @@ from sklearn.tree import DecisionTreeRegressor
 from sklearn.ensemble import RandomForestRegressor
 from sklearn.svm import SVR
 from sklearn.metrics import r2_score
-list={"Linear regression":LinearRegression(),"Decision tree":DecisionTreeRegressor(random_state=50),"SVM":SVR(kernel="linear"),"RAndomforest":RandomForestRegressor(n_estimators=200)}
+list={"Linear regression":LinearRegression(),"Decision tree":DecisionTreeRegressor(random_state=50),"SVM":SVR(kernel="linear"),"RAndomforest":RandomForestRegressor(n_estimators=100)}
 accuracy={}
 for name,model in list.items():
     model.fit(x_train,y_train)
